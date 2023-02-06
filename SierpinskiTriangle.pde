@@ -11,13 +11,11 @@ public void draw(){
 public void round(double x, double y, double z){
   if(z <= 100){
     fill(194, 240, 184, 15);
-    tint(255, 127);
     stroke((int)(Math.random()*360),
     (int)(Math.random()*360),
     (int)(Math.random()*360));
     circle((int)x, (int)y, (int)z);
-    for(int n = z; z >= 0; z--){
-      fill(194, 240, 184, z);
+    
       
   }else{
     round(x, y, z/2);
